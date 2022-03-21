@@ -1,0 +1,121 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+header{
+  height: 15vh;
+}
+nav,.left-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 25px;
+}
+
+.left-content img{
+  width: 70px;
+  margin-top: 10px;
+
+}
+.right-content{
+  margin-right: 60px;
+}
+.right-content button{
+  outline: none;
+  border: none;
+  padding: 15px 20px;
+  font-weight: 600;
+  color: black;
+  background-color: transparent;
+}
+.right-content button:nth-of-type(2){
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+ul{
+  display: flex;
+  margin-left: 15px;
+}
+ul li{
+  list-style-type: none;
+}
+ul li a{
+  color: grey;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 2vmin;
+
+}
+
+main{
+  height: 75%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: 3rem auto;
+
+
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: -webkit-linear-gradient(to right, #8360c3, #2ebf91); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #8360c3, #2ebf91); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 50px;
+}
+.desc{
+  margin-left: 1rem;
+}
+.desc h1{
+  font-size: 5vmax;
+  margin-bottom: .5rem;
+}
+.desc p{
+  margin-bottom: 2rem;
+}
+.imgOne{
+  width: 100%;
+
+  margin-right: 25rem;
+}
+#btnOne{
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  padding: 15px 20px;
+  border: none;
+  margin-right: 1rem;
+}
+#btnTwo{
+  background-color: transparent;
+  color: black;
+  border-radius: 15px;
+  padding: 15px 20px;
+  border: 1px solid black;
+  margin-right: 1rem;
+}
+.bars{
+  display: none;
+}
+.barsClass{
+  display: none;
+}
+@media screen and (max-width: 700px){
+  .left-content ul, .right-content button{
+    display: none;
+  }
+  .barsClass{
+    display: block;
+    font-size: xx-large;
+    margin-right: 2rem;
+  }
+  .desc h1{
+  font-size: 2rem;
+  margin-bottom: .5rem;
+}
+}
